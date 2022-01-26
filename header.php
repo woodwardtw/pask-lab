@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav id="main-nav" class="navbar navbar-expand-md" >
 
 		    <div class="row header">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="title">
                         <a href="<?php echo site_url();?>">
                             <img class="logo" src="<?php echo get_template_directory_uri();?>/imgs/logo.svg" alt="Pask Lab logo.">
@@ -47,7 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             	<?php wp_nav_menu( array( 'theme_location' => 'home-menu' ) ); ?>
             </div>
             <!--end menu block-->
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <div class="etc">
                   logo maybe?
             </div>
