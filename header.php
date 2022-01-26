@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <a href="<?php echo site_url();?>">
                             <img class="logo" src="<?php echo get_template_directory_uri();?>/imgs/logo.svg" alt="Pask Lab logo.">
                         </a>
-						<span class="midd">Middlebury College</span>
+						<!-- <span class="midd">Middlebury College</span> -->
                     </div>
                 </div>
             <!--end title block-->

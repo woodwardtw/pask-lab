@@ -25,8 +25,8 @@ defined( 'ABSPATH' ) || exit;
         <div class="col-md-7">
            <div class="row project-row">
                 <div class="col-md-6">
-                      <div class="project">
-                     proja
+                    <div class="project">
+                        
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -50,6 +50,7 @@ defined( 'ABSPATH' ) || exit;
            <div class="projects-text">
                 <h2>Projects</h2>
                 <?php the_field('projects');?>
+                <a class="see-more" href="projects">See more projects</a>
             </div>
         </div>
     </div>
