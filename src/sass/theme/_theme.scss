@@ -1,1 +1,12 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+body {
+    background-color: $gray;
+}
+
+.header {
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Poppins", sans-serif;
+}

@@ -10,8 +10,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$bootstrap_version = get_theme_mod( 'understrap_bootstrap_version', 'bootstrap4' );
-$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
+$container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -20,6 +19,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0d55835ef38be4e02b8a2e9d2/c4ae2935bae56386c7b926d2a.js");</script>
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
@@ -27,10 +27,37 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<header id="wrapper-navbar">
+	<div id="wrapper-navbar">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
+		<nav id="main-nav" class="navbar navbar-expand-md" >
 
-	</header><!-- #wrapper-navbar end -->
+		    <div class="row header">
+                <div class="col-md-3">
+                    <div class="title">
+                        <a href="<?php echo site_url();?>">
+                            <img class="logo" src="<?php echo get_template_directory_uri();?>/imgs/logo.svg" alt="Pask Lab logo.">
+                        </a>
+						<span class="midd">Middlebury College</span>
+                    </div>
+                </div>
+            <!--end title block-->
+            <div class="col-md-4">
+            	<?php wp_nav_menu( array( 'theme_location' => 'home-menu' ) ); ?>
+            </div>
+            <!--end menu block-->
+            <div class="col-md-5">
+                <div class="etc">
+                  logo maybe?
+            </div>
+            <div class="col-md-12">
+                <div class="tag-line">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+
+		</nav><!-- .site-navigation -->
+
+	</div><!-- #wrapper-navbar end -->

@@ -26,6 +26,7 @@ $understrap_includes = array(
 	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/understrap/understrap/issues/567.
 	'/editor.php',                          // Load Editor functions.
 	'/block-editor.php',                    // Load Block Editor functions.
+	'/acf.php',                             // Load ACF functions.
 	'/deprecated.php',                      // Load deprecated functions.
 );
 
@@ -43,3 +44,14 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
+
+//home page menu
+function ar_home_menu() {
+	register_nav_menus(
+	  array(
+		'home-menu' => __( 'Home Main Menu' ),
+		'home-middle-menu' => __( 'Home Middle Menu' )
+	  )    
+	 );
+   }
+   add_action( 'init', 'ar_home_menu' );

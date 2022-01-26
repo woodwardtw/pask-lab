@@ -29,6 +29,7 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . $theme_styles );
 		wp_enqueue_style( 'understrap-styles', get_template_directory_uri() . $theme_styles, array(), $css_version );
+		wp_enqueue_style( 'Poppins-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 		wp_enqueue_script( 'jquery' );
 
