@@ -70,13 +70,19 @@ p {
 }
 
 .project {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-.project:after {
-    content: "";
-    display: block;
+    margin: 0 auto 30px auto;
     padding-bottom: 100%;
     border: 10px solid #fff;
+    text-align: center;
+  }
+  
+// .project:before {
+//     content: "";
+//     display: block;
+//     padding-bottom: 100%;
+//     border: 10px solid #fff;
+//   }
+
+  .project a {
+
   }

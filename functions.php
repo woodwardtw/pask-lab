@@ -28,6 +28,7 @@ $understrap_includes = array(
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/acf.php',                             // Load ACF functions.
 	'/data.php',                            // Load cpts, custom tax etc.
+	'/home.php',                            // Load the homepage functions
 	'/deprecated.php',                      // Load deprecated functions.
 );
 

@@ -24,7 +24,8 @@ defined( 'ABSPATH' ) || exit;
     <div class="projects-content row" id="projects">
         <div class="col-md-7">
            <div class="row project-row">
-                <div class="col-md-6">
+               <?php plask_home_projects();?>
+                <!-- <div class="col-md-6">
                     <div class="project">
                         
                     </div>
@@ -43,7 +44,7 @@ defined( 'ABSPATH' ) || exit;
                       <div class="project">
                      proja
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>        
        <div class="col-md-5">
