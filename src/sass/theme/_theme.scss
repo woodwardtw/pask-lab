@@ -3,6 +3,7 @@ body {
     background-color: $gray;
 }
 
+
 .header {
 	width: 100%;
 }
@@ -24,9 +25,15 @@ p {
 }
 
 .logo {
-    max-width: 350px;
+    width: 20vw;
+    height: 20vw;
     margin: 0 auto;
     display: block;
+    background-image: url(../imgs/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all .3s ease;
+    background-position: center center;
 }
 
 #menu-home {

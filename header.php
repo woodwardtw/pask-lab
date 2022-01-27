@@ -34,13 +34,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<nav id="main-nav" class="navbar navbar-expand-md" >
 
 		    <div class="row header">
-                <div class="col-md-4">
-                    <div class="title">
-                        <a href="<?php echo site_url();?>">
-                            <img class="logo" src="<?php echo get_template_directory_uri();?>/imgs/logo.svg" alt="Pask Lab logo.">
+                <div class="col-md-4 d-flex align-items-center">
+                        <a class="logo" href="<?php echo site_url();?>" >
+                            <!-- <img class="logo" src="<?php echo get_template_directory_uri();?>/imgs/logo.svg" alt="Pask Lab logo."> -->
                         </a>
-						<!-- <span class="midd">Middlebury College</span> -->
-                    </div>
                 </div>
             <!--end title block-->
             <div class="col-md-4">
