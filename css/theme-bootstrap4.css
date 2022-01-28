@@ -16022,8 +16022,32 @@ body {
   background-color: #e5e5e5;
 }
 
+#main-nav {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   width: 100%;
+  margin: 0;
+}
+
+.header .col-md-4 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.wrapper {
+  padding: 0;
+}
+
+.white-row {
+  background-color: #fff;
+}
+
+.black-row {
+  background-color: #182016;
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5 {
@@ -16046,22 +16070,36 @@ p {
   width: 20vw;
   height: 20vw;
   margin: 0 auto;
-  display: block;
-  background-image: url(../imgs/logo.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: all 0.3s ease;
-  background-position: center center;
+  font-size: 10vw;
 }
 
 #menu-home {
-  font-size: 3.5rem;
+  font-size: 4vw;
   font-family: "Poppins", sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu-home {
+  border-left: 2px solid #182016;
+  border-right: 2px solid #182016;
+}
+
+#menu-home li {
+  margin: 0;
+  padding: 10px 20px;
+  line-height: 1;
+  border-bottom: 2px solid #182016;
+}
+
+#menu-home li:last-of-type {
+  border-bottom: none;
 }
 
 .about-content {
-  background: #fff;
-  background: linear-gradient(45deg, #c70804 40%, #fff 40%);
+  background: #182016;
+  background: linear-gradient(45deg, #c70804 40%, #182016 40%);
   padding: 80px 0;
 }
 

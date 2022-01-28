@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
-<div class="site" id="page">
+<div class="site white-row" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
@@ -33,26 +33,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav id="main-nav" class="navbar navbar-expand-md" >
 
-		    <div class="row header">
-                <div class="col-md-4 d-flex align-items-center">
+		    <div class="row header">                
+            <div class="col-md-8">
                         <a class="logo" href="<?php echo site_url();?>" >
+						<h1>Pask Lab</h1>
                             <!-- <img class="logo" src="<?php echo get_template_directory_uri();?>/imgs/logo.svg" alt="Pask Lab logo."> -->
                         </a>
                 </div>
-            <!--end title block-->
-            <div class="col-md-4">
+            <!--end title block-->           
+			<div class="col-md-4">
             	<?php wp_nav_menu( array( 'theme_location' => 'home-menu' ) ); ?>
             </div>
-            <!--end menu block-->
-            <div class="col-md-4">
-                <div class="etc">
-                  logo maybe?
-            </div>
-            <div class="col-md-12">
-                <div class="tag-line">
-                    &nbsp;
-                </div>
-            </div>
+            <!--end menu block-->            
         </div>
 
 		</nav><!-- .site-navigation -->

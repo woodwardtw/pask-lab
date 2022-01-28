@@ -3,10 +3,34 @@ body {
     background-color: $gray;
 }
 
+#main-nav {
+    padding: 0;
+    margin: 0;
+}
 
 .header {
 	width: 100%;
+    margin: 0;
 }
+
+.header .col-md-4 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.wrapper {
+    padding: 0;
+}
+
+.white-row {
+    background-color: #fff;
+}
+
+.black-row {
+    background-color: $black;
+    color: #fff;
+}
+
 
 h1, h2, h3, h4, h5 {
     font-family: "Poppins", sans-serif;
@@ -28,22 +52,55 @@ p {
     width: 20vw;
     height: 20vw;
     margin: 0 auto;
-    display: block;
-    background-image: url(../imgs/logo.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: all .3s ease;
-    background-position: center center;
+    font-size: 10vw;
+    // display: block;
+    // background-image: url(../imgs/logo.svg);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // transition: all .3s ease;
+    // background-position: center center;
 }
 
 #menu-home {
-    font-size: 3.5rem;
+    font-size: 4vw;
     font-family: "Poppins", sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+#menu-home {
+    border-left: 2px solid $black;
+    border-right: 2px solid $black;
+}
+
+#menu-home li {
+    margin: 0;
+    padding: 10px 20px;
+    line-height: 1;
+    border-bottom: 2px solid $black;
+}
+
+#menu-home li:last-of-type {
+    border-bottom: none;
+}
+
+// #menu-home li:before {
+//     content: '';
+//     width: 3.5vw;
+//     height: 3.5vw;    
+//     display: inline-block;
+//     transition: all .3s ease;
+//     background-color: $red;
+// }
+
+// #menu-home li:hover:before{
+//     width: 5vw;
+// }
+
 .about-content {
-    background: #fff;
-    background: linear-gradient(45deg,$red 40%, #fff 40%);
+    background: $black;
+    background: linear-gradient(45deg,$red 40%, $black 40%);
     padding: 80px 0;
    
 }
