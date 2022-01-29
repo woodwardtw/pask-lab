@@ -16066,22 +16066,18 @@ p {
   margin-bottom: 1.4rem;
 }
 
-.logo {
-  width: 20vw;
-  height: 20vw;
+.logo h1 {
   margin: 0 auto;
-  font-size: 10vw;
+  font-size: 12vw;
+  text-transform: lowercase;
 }
 
 #menu-home {
-  font-size: 4vw;
+  font-size: 2vw;
   font-family: "Poppins", sans-serif;
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-#menu-home {
   border-left: 2px solid #182016;
   border-right: 2px solid #182016;
 }
