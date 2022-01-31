@@ -9,7 +9,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(24, 32, 22, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -117,7 +117,7 @@ sup {
 }
 
 a {
-  color: #182016;
+  color: black;
   text-decoration: none;
   background-color: transparent;
 }
@@ -329,7 +329,7 @@ template {
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #182016;
+  --primary: black;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -393,32 +393,32 @@ template {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(24, 32, 22, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .table-hover tbody tr:hover {
   color: #212529;
-  background-color: rgba(24, 32, 22, 0.075);
+  background-color: rgba(0, 0, 0, 0.075);
 }
 
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #bec1be;
+  background-color: #b8b8b8;
 }
 .table-primary th,
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
-  border-color: #878b86;
+  border-color: #7a7a7a;
 }
 
 .table-hover .table-primary:hover {
-  background-color: #b1b5b1;
+  background-color: #ababab;
 }
 .table-hover .table-primary:hover > td,
 .table-hover .table-primary:hover > th {
-  background-color: #b1b5b1;
+  background-color: #ababab;
 }
 
 .table-secondary,
@@ -564,15 +564,15 @@ template {
 .table-active,
 .table-active > th,
 .table-active > td {
-  background-color: rgba(24, 32, 22, 0.075);
+  background-color: rgba(0, 0, 0, 0.075);
 }
 
 .table-hover .table-active:hover {
-  background-color: rgba(13, 17, 12, 0.075);
+  background-color: rgba(0, 0, 0, 0.075);
 }
 .table-hover .table-active:hover > td,
 .table-hover .table-active:hover > th {
-  background-color: rgba(13, 17, 12, 0.075);
+  background-color: rgba(0, 0, 0, 0.075);
 }
 
 .table .thead-dark th, .wp-block-table table .thead-dark th {
@@ -752,7 +752,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(24, 32, 22, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 small,
@@ -935,12 +935,12 @@ mark,
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #182016;
+  color: black;
 }
 
 .has-primary-background-color {
-  background-color: #182016;
-  border-color: #182016;
+  background-color: black;
+  border-color: black;
 }
 
 .has-secondary-color,

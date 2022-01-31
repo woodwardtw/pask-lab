@@ -11,12 +11,15 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <!--about section-->
-    <div class="about-content row black-row" id="about">
-        <div class="col-md-2 red-home">
+    <div class="about-content row black-row" id="about">       
+       <div class="col-md-6">
+           <div class="about-text">
+                <h2>About</h2>
+                <?php the_field('about');?>
+</div>
         </div>
-       <div class="col-md-8 about-text">
-           <h2>About</h2>
-            <?php the_field('about');?>
+        <div class="col-md-6 black-block">
+            <img src="<?php echo get_template_directory_uri();?>/imgs/ant-head.jpg">
         </div>
     </div>
     <!--end about-->

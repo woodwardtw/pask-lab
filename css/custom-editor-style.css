@@ -21,7 +21,7 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(24, 32, 22, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 hr {
@@ -170,11 +170,11 @@ sup {
 }
 
 a {
-  color: #182016;
+  color: black;
   text-decoration: underline;
 }
 a:hover {
-  color: #131a12;
+  color: black;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -445,7 +445,7 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #182016;
+  --bs-primary: black;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -453,7 +453,7 @@ progress {
   --bs-danger: #c70804;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 24, 32, 22;
+  --bs-primary-rgb: 0, 0, 0;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -462,7 +462,7 @@ progress {
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 24, 32, 22;
+  --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -480,11 +480,11 @@ progress {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: #212529;
-  --bs-table-striped-bg: rgba(24, 32, 22, 0.05);
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
   --bs-table-active-color: #212529;
-  --bs-table-active-bg: rgba(24, 32, 22, 0.1);
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: #212529;
-  --bs-table-hover-bg: rgba(24, 32, 22, 0.075);
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
@@ -542,87 +542,87 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #d1d2d0;
-  --bs-table-striped-bg: #c8c9c7;
-  --bs-table-striped-color: #182016;
-  --bs-table-active-bg: #bfc0bd;
-  --bs-table-active-color: #182016;
-  --bs-table-hover-bg: #c3c5c2;
-  --bs-table-hover-color: #182016;
-  color: #182016;
-  border-color: #bfc0bd;
+  --bs-table-bg: #cccccc;
+  --bs-table-striped-bg: #c2c2c2;
+  --bs-table-striped-color: black;
+  --bs-table-active-bg: #b8b8b8;
+  --bs-table-active-color: black;
+  --bs-table-hover-bg: #bdbdbd;
+  --bs-table-hover-color: black;
+  color: black;
+  border-color: #b8b8b8;
 }
 
 .table-secondary {
   --bs-table-bg: #e2e3e5;
-  --bs-table-striped-bg: #d8d9db;
-  --bs-table-striped-color: #182016;
-  --bs-table-active-bg: #ced0d0;
-  --bs-table-active-color: #182016;
-  --bs-table-hover-bg: #d3d4d5;
-  --bs-table-hover-color: #182016;
-  color: #182016;
-  border-color: #ced0d0;
+  --bs-table-striped-bg: #d7d8da;
+  --bs-table-striped-color: black;
+  --bs-table-active-bg: #cbccce;
+  --bs-table-active-color: black;
+  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-color: black;
+  color: black;
+  border-color: #cbccce;
 }
 
 .table-success {
   --bs-table-bg: #d1e7dd;
-  --bs-table-striped-bg: #c8ddd3;
-  --bs-table-striped-color: #182016;
-  --bs-table-active-bg: #bfd3c9;
-  --bs-table-active-color: #182016;
-  --bs-table-hover-bg: #c3d8ce;
-  --bs-table-hover-color: #182016;
-  color: #182016;
-  border-color: #bfd3c9;
+  --bs-table-striped-bg: #c7dbd2;
+  --bs-table-striped-color: black;
+  --bs-table-active-bg: #bcd0c7;
+  --bs-table-active-color: black;
+  --bs-table-hover-bg: #c1d6cc;
+  --bs-table-hover-color: black;
+  color: black;
+  border-color: #bcd0c7;
 }
 
 .table-info {
   --bs-table-bg: #cff4fc;
-  --bs-table-striped-bg: #c6e9f1;
-  --bs-table-striped-color: #182016;
-  --bs-table-active-bg: #bddfe5;
-  --bs-table-active-color: #182016;
-  --bs-table-hover-bg: #c1e4eb;
-  --bs-table-hover-color: #182016;
-  color: #182016;
-  border-color: #bddfe5;
+  --bs-table-striped-bg: #c5e8ef;
+  --bs-table-striped-color: black;
+  --bs-table-active-bg: #badce3;
+  --bs-table-active-color: black;
+  --bs-table-hover-bg: #bfe2e9;
+  --bs-table-hover-color: black;
+  color: black;
+  border-color: #badce3;
 }
 
 .table-warning {
   --bs-table-bg: #f9ebcc;
-  --bs-table-striped-bg: #eee1c3;
-  --bs-table-striped-color: #182016;
-  --bs-table-active-bg: #e3d7ba;
-  --bs-table-active-color: #182016;
-  --bs-table-hover-bg: #e8dcbe;
-  --bs-table-hover-color: #182016;
-  color: #182016;
-  border-color: #e3d7ba;
+  --bs-table-striped-bg: #eddfc2;
+  --bs-table-striped-color: black;
+  --bs-table-active-bg: #e0d4b8;
+  --bs-table-active-color: black;
+  --bs-table-hover-bg: #e6d9bd;
+  --bs-table-hover-color: black;
+  color: black;
+  border-color: #e0d4b8;
 }
 
 .table-danger {
   --bs-table-bg: #f4cecd;
-  --bs-table-striped-bg: #e9c5c4;
-  --bs-table-striped-color: #182016;
-  --bs-table-active-bg: #debdbb;
-  --bs-table-active-color: #182016;
-  --bs-table-hover-bg: #e4c1bf;
-  --bs-table-hover-color: #182016;
-  color: #182016;
-  border-color: #debdbb;
+  --bs-table-striped-bg: #e8c4c3;
+  --bs-table-striped-color: black;
+  --bs-table-active-bg: #dcb9b9;
+  --bs-table-active-color: black;
+  --bs-table-hover-bg: #e2bfbe;
+  --bs-table-hover-color: black;
+  color: black;
+  border-color: #dcb9b9;
 }
 
 .table-light {
   --bs-table-bg: #f8f9fa;
-  --bs-table-striped-bg: #edeeef;
-  --bs-table-striped-color: #182016;
-  --bs-table-active-bg: #e2e3e3;
-  --bs-table-active-color: #182016;
-  --bs-table-hover-bg: #e7e9e9;
-  --bs-table-hover-color: #182016;
-  color: #182016;
-  border-color: #e2e3e3;
+  --bs-table-striped-bg: #ecedee;
+  --bs-table-striped-color: black;
+  --bs-table-active-bg: #dfe0e1;
+  --bs-table-active-color: black;
+  --bs-table-hover-bg: #e5e6e7;
+  --bs-table-hover-color: black;
+  color: black;
+  border-color: #dfe0e1;
 }
 
 .table-dark {
@@ -943,12 +943,12 @@ progress {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #182016;
+  color: black;
 }
 
 .has-primary-background-color {
-  background-color: #182016;
-  border-color: #182016;
+  background-color: black;
+  border-color: black;
 }
 
 .has-secondary-color,

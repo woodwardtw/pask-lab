@@ -11,9 +11,12 @@ body {
 .header {
 	width: 100%;
     margin: 0;
+    background-image: url(../imgs/scent.svg);
+    background-size: cover;
+    background-position: left center;
 }
 
-.header .col-md-4 {
+.header .top-menu {
     padding-right: 0;
     padding-left: 0;
 }
@@ -54,6 +57,7 @@ p {
     margin: 0 auto;
     font-size: 12vw;
     text-transform: lowercase;
+    text-align: right;
     // display: block;
     // background-image: url(../imgs/logo.svg);
     // background-size: contain;
@@ -77,6 +81,19 @@ p {
     padding: 10px 20px;
     line-height: 1;
     border-bottom: 2px solid $black;
+    transition: all .3s ease;   
+}
+
+#menu-home li a {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#menu-home li:hover {
+    box-shadow: inset 22px 0 0 0 $red;
+    padding-left: 32px;
+    text-decoration: none;
 }
 
 #menu-home li:last-of-type {
@@ -98,7 +115,7 @@ p {
 
 .about-content {
     background: $black;
-    background: linear-gradient(45deg,$red 40%, $black 40%);
+    background: linear-gradient(45deg,$red 20%, $black 20%);
     padding: 80px 0;
    
 }
@@ -117,7 +134,8 @@ p {
 }
 
 .projects-content {
-    background-color: $yellow;
+    // background-color: $red;
+    background: linear-gradient(45deg,$red 90%, $black 10%);
     padding: 80px 0;
 }
 
@@ -134,8 +152,9 @@ p {
 .project {
     margin: 0 auto 30px auto;
     padding-bottom: 100%;
-    border: 10px solid #fff;
+    border: 35px solid #fff;
     text-align: center;
+    background-color: #fff;
   }
   
 // .project:before {
