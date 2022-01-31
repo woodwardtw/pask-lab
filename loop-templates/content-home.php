@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
     <!--end about-->
     <!--about section-->
     <div class="projects-content row" id="projects">
-        <div class="col-md-7">
+        <div class="col-md-6">
            <div class="row project-row">
                <?php plask_home_projects();?>
                 <!-- <div class="col-md-6">
@@ -50,11 +50,11 @@ defined( 'ABSPATH' ) || exit;
                 </div> -->
             </div>
         </div>        
-       <div class="col-md-5">
+       <div class="col-md-6">
            <div class="projects-text">
                 <h2>Projects</h2>
                 <?php the_field('projects');?>
-                <a class="see-more" href="projects">See more projects</a>
+                <a class="see-more" href="projects">See more projects <span class="arrow"></span></a>
             </div>
         </div>
     </div>

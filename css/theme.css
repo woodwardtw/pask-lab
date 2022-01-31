@@ -17125,6 +17125,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Poppins", sans-serif;
   color: black;
+  font-weight: 600;
 }
 
 h2, .h2 {
@@ -17185,19 +17186,20 @@ p {
   padding: 80px 0;
 }
 
-.about-text {
-  padding: 60px 120px;
+.about-text, .projects-text {
+  padding: 60px 100px;
   background-color: #fff;
 }
 
 .projects-content {
   background: linear-gradient(45deg, #c70804 90%, black 10%);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
   padding: 80px 0;
 }
 
 .projects-text {
-  padding: 60px 120px;
-  background-color: #fff;
   margin-left: 30px;
 }
 
@@ -17211,5 +17213,46 @@ p {
   border: 35px solid #fff;
   text-align: center;
   background-color: #fff;
+}
+
+.see-more {
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: #e5e5e5;
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: -5px 5px 0 #000;
+  border: 2px solid #000;
+  transition: all 0.6s ease;
+}
+
+.see-more:hover {
+  box-shadow: 5px 5px 0 #000;
+}
+
+@media only screen and (max-width: 700px) {
+  #menu-home {
+    border-top: 2px solid black;
+    border-left: none;
+    border-right: none;
+  }
+
+  #menu-home li a {
+    font-size: 7vw;
+  }
+
+  .black-block {
+    padding-top: 30px;
+  }
+
+  .projects-text, .about-text {
+    padding: 20px;
+  }
+
+  .projects-text {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=theme.css.map */
