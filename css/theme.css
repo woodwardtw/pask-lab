@@ -17124,6 +17124,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Poppins", sans-serif;
   color: black;
   font-weight: 600;
+  text-transform: lowercase;
 }
 
 h2, .h2 {
@@ -17159,7 +17160,7 @@ p {
   margin: 0;
   padding: 10px 20px;
   line-height: 1;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #fff;
   transition: all 0.3s ease;
 }
 
@@ -17168,6 +17169,7 @@ p {
   width: 100%;
   height: auto;
   color: #fff;
+  text-transform: lowercase;
 }
 
 #menu-home li:hover {
@@ -17178,6 +17180,10 @@ p {
 
 #menu-home li:last-of-type {
   border-bottom: none;
+}
+
+#menu-home li a:hover {
+  text-decoration: none;
 }
 
 .about-content {
@@ -17239,11 +17245,65 @@ p {
   background-position: top;
   background-size: 130vw;
   background-repeat: no-repeat;
-  padding: 0;
+  padding: 500px 0;
 }
 
 .graph {
   height: 400px;
+}
+
+.members-link {
+  color: #fff;
+  font-size: 7vw;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  line-height: 1.2;
+}
+
+.home-person img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  mix-blend-mode: hard-light;
+  -webkit-filter: saturate(0);
+  filter: saturate(0);
+}
+
+.home-person.yellow {
+  background-color: #e39c01;
+}
+
+.home-person.orange {
+  background-color: #e3820b;
+}
+
+.home-person.red {
+  background-color: #c70804;
+}
+
+.home-person.gray {
+  background-color: #494d4e;
+}
+
+.tall-person {
+  height: 900px;
+  overflow: hidden;
+}
+
+.med-person {
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+}
+
+.short-person {
+  height: 340px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.short-person img, .med-person img, .tall-person img {
+  height: 80%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
