@@ -54,3 +54,6 @@ function plask_home_projects(){
     wp_reset_postdata();
 }
 
+function plask_home_people(){
+    
+}

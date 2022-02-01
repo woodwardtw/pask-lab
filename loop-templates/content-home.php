@@ -23,20 +23,25 @@ defined( 'ABSPATH' ) || exit;
         </div>
     </div>
     <!--end about-->
-    <!--about section-->
+    <!--project section-->
     <div class="projects-content row" id="projects">
-               <?php plask_home_projects();?>              
+        <?php plask_home_projects();?>              
     </div>
-    <!--end about-->
-
-	<div class="entry-content">
-
-		<?php
-		the_content();
-		understrap_link_pages();
-		?>
-
-	</div><!-- .entry-content -->
+    <!--end project-->
+    <!--people section-->
+    <div class="people-content row" id="people">
+        <div class="col-md-4 graph">
+            content
+        </div>
+        <div class="col-md-4 graph">
+            content
+        </div>
+        <div class="col-md-4 red-people graph">
+            content
+        </div>
+        <?php plask_home_people();?>              
+    </div>
+    <!--end people-->
 
 	<footer class="entry-footer">
 
