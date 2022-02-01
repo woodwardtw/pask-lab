@@ -11,9 +11,10 @@ body {
 .header {
 	width: 100%;
     margin: 0;
-    background-image: url(../imgs/scent.svg);
-    background-size: cover;
-    background-position: left center;
+    // background-image: url(../imgs/scent.svg);
+    // background-size: cover;
+    // background-position: left center;
+    background-color: #000;
 }
 
 .header .top-menu {
@@ -42,7 +43,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 4vw;
 }
 
 p {
@@ -58,7 +59,8 @@ p {
     margin: 0 auto;
     font-size: 12vw;
     text-transform: lowercase;
-    text-align: right;
+    text-align: left;
+    color: #fff;
     // display: block;
     // background-image: url(../imgs/logo.svg);
     // background-size: contain;
@@ -89,6 +91,7 @@ p {
     display: block;
     width: 100%;
     height: auto;
+    color: #fff;
 }
 
 #menu-home li:hover {
@@ -130,7 +133,7 @@ p {
 }
 
 .about-text, .projects-text {
-    padding: 60px 100px;
+    padding: 60px 5vw;
     background-color: #fff;
 }
 
@@ -194,7 +197,7 @@ p {
     //background-image: url(../imgs/br-grid.svg);
     background-image: url(../imgs/scent-red-top.svg);
     background-position: top;
-    background-size: cover;
+    background-size: 130vw;
     background-repeat: no-repeat;
     padding: 0;
 }
