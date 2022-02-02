@@ -223,6 +223,15 @@ p {
     line-height: 1;
     margin-top: -20px;
     display: block;
+    text-transform: lowercase;
+    transition: all .6s ease;
+}
+
+.members-link:hover {
+    color: #fff;
+    box-shadow: inset 22px 0 0 0 $red;
+    padding-left: 32px;
+    text-decoration: none;
 }
 
 .home-person {
@@ -280,6 +289,9 @@ p {
     width: 100%;
 }
 
+.last-img {
+    margin-bottom: -30px;
+}
 
   @media only screen and (max-width: 700px) {
     #menu-home {

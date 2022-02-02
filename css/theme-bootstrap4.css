@@ -16195,6 +16195,15 @@ p {
   line-height: 1;
   margin-top: -20px;
   display: block;
+  text-transform: lowercase;
+  transition: all 0.6s ease;
+}
+
+.members-link:hover {
+  color: #fff;
+  box-shadow: inset 22px 0 0 0 #c70804;
+  padding-left: 32px;
+  text-decoration: none;
 }
 
 .home-person {
@@ -16243,6 +16252,10 @@ p {
 .short-person img, .med-person img, .tall-person img {
   height: 80%;
   width: 100%;
+}
+
+.last-img {
+  margin-bottom: -30px;
 }
 
 @media only screen and (max-width: 700px) {
