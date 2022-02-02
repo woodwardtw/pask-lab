@@ -257,6 +257,12 @@ p {
     text-decoration: none;
 }
 
+.member-link {
+    font-size: 4vw;
+    font-weight: 600;
+    color: #fff;
+}
+
 .home-person {
     border: 10px solid #fff;
     mix-blend-mode: hard-light;
@@ -363,6 +369,7 @@ p {
 
 .news-date {
     font-size: .7rem;
+    padding: 0 0 40px 40px;
 }
 
   @media only screen and (max-width: 700px) {

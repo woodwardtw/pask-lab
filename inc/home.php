@@ -74,12 +74,13 @@ function plask_home_people(){
           // Do Stuff
             $title = get_the_title();
             $img = get_the_post_thumbnail_url(get_the_ID(),'large'); 
+            $url = get_the_permalink();
             if($count == 1){
             array_push($html, "
                 <div class='col-md-4'>
                     <div class='orange'>
                         <div class='tall-person home-person' style='background-image: url({$img})'>                        
-                            <a href='#' class='member-link'>{$title}</a>
+                            <a href='{$url}' class='member-link'>{$title}</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +94,7 @@ function plask_home_people(){
                 <div class='col-md-5'>
                     <div class='red'>
                         <div class='short-person home-person red' style='background-image: url({$img})'>
-                            {$title}
+                            <a href='{$url}' class='member-link'>{$title}</a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +105,7 @@ function plask_home_people(){
                 <div class='col-md-7'>
                     <div class='gray'>
                         <div class='short-person home-person gray' style='background-image: url({$img})'>                   
-                            {$title}
+                            <a href='{$url}' class='member-link'>{$title}</a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +116,7 @@ function plask_home_people(){
                 <div class='col-md-7 last-img'>
                     <div class='gray'>
                         <div class='short-person home-person gray' style='background-image: url({$img})'>                   
-                            {$title}
+                            <a href='{$url}' class='member-link'>{$title}</a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +127,7 @@ function plask_home_people(){
                 <div class='col-md-5 last-img'>
                     <div class='yellow'>
                         <div class='med-person home-person' style='background-image: url({$img})'>
-                            {$title}
+                            <a href='{$url}' class='member-link'>{$title}</a>
                         </div>
                     </div>
                 </div>
