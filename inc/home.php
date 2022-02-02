@@ -16,11 +16,12 @@ function plask_home_projects(){
             'orderby'        => 'rand',            
     );
     $proj_desc = get_field('projects');
-    $proj_intro = "<div class='col-md-4'>
-    <div class='projects-text'>   
-    {$proj_desc}
-    <a class='see-more' href='projects'>See more projects</a>
-    </div>
+    $proj_intro = "
+    <div class='col-md-4'>
+        <div class='projects-text'>   
+            {$proj_desc}
+            <a class='see-more' href='projects'>See more projects</a>
+        </div>
     </div>";
     $resource_query = new WP_Query( $args ); 
     // The Loop
@@ -29,6 +30,8 @@ function plask_home_projects(){
         while ( $resource_query->have_posts() ) : $resource_query->the_post();  $count++;
           // Do Stuff
             $offset = '';
+            $img = get_the_post_thumbnail_url(get_the_ID(),'large'); 
+
             if($count == 3){
                 $offset = 'offset-md-4';
             }
@@ -36,11 +39,13 @@ function plask_home_projects(){
                 $offset = 'offset-md-8';
             }
             $title = get_the_title();
+            $url = get_the_permalink();
             // $url = get_field('link');
             array_push($html, "
             <div class='col-md-4 {$offset}'>
                 <div class='project'>
-                    <a href='projects' class='project-link'>{$title}</a>
+                <img class='project-img' src='{$img}'>
+                    <a href='{$url}' class='project-link'>{$title}</a>
                 </div>
             </div>
             ");

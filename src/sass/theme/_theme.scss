@@ -166,8 +166,16 @@ p {
     border: 35px solid #fff;
     text-align: center;
     background-color: #fff;
+    overflow: hidden;
+    position: relative;
   }
   
+
+  .project-img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
 // .project:before {
 //     content: "";
 //     display: block;
@@ -175,9 +183,25 @@ p {
 //     border: 10px solid #fff;
 //   }
 
-  .project a {
+.project-link {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    font-size: 2vw;
+    bottom: 10px;
+    left: 15px;
+    padding: 7px 15px;
+    background-color: $black;
+    color: #fff;
+    line-height: 1;
+    transition: all .6s ease;
+}
 
-  }
+.project-link:hover{
+    padding-left: 32px;
+    color: #fff;
+    box-shadow: inset 22px 0 0 0 $red;
+}
 
   .see-more {
     font-size: 2rem;
