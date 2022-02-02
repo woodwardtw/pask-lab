@@ -159,10 +159,12 @@ function plask_home_news(){
           $date = get_the_date();
             array_push($html, "
             <div class='col-md-3'>
-                <div class='news'>              
-                    <a href='{$url}' class='news-link'>{$title}</a>
-                    <div class='news-date'>{$date}</div>
-                </div>
+                <a href='{$url}' class='news-link'>
+                    <div class='news'>              
+                        {$title}
+                        <div class='news-date'>{$date}</div>
+                    </div>
+                </a>
             </div>
             ");
         endwhile;

@@ -345,9 +345,10 @@ p {
     // background: $black;
     // color: #fff;
     box-shadow: -5px 5px $orange;
+    transition: all .6s ease;
 }
 
-.news a {
+.news {
     font-size: 2rem;
     line-height: 1;
     display: block;
@@ -357,12 +358,11 @@ p {
 }
 
 .news:hover {
-    box-shadow: inset 22px 0 0 0 $red;
+    box-shadow: -8px 8px $red;
 }
 
 .news-date {
     font-size: .7rem;
-    padding: 0 0 40px 40px;
 }
 
   @media only screen and (max-width: 700px) {
