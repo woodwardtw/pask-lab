@@ -321,8 +321,8 @@ template {
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #c70804;
-  --orange: #e3820b;
-  --yellow: #e39c01;
+  --orange: #cc6739;
+  --yellow: #d5a64e;
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
@@ -333,7 +333,7 @@ template {
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
-  --warning: #e39c01;
+  --warning: #d5a64e;
   --danger: #c70804;
   --light: #f8f9fa;
   --dark: #343a40;
@@ -484,21 +484,21 @@ template {
 .table-warning,
 .table-warning > th,
 .table-warning > td {
-  background-color: #f7e3b8;
+  background-color: #f3e6cd;
 }
 .table-warning th,
 .table-warning td,
 .table-warning thead th,
 .table-warning tbody + tbody {
-  border-color: #f0cc7b;
+  border-color: #e9d1a3;
 }
 
 .table-hover .table-warning:hover {
-  background-color: #f4daa1;
+  background-color: #eedcb8;
 }
 .table-hover .table-warning:hover > td,
 .table-hover .table-warning:hover > th {
-  background-color: #f4daa1;
+  background-color: #eedcb8;
 }
 
 .table-danger,
@@ -855,22 +855,22 @@ mark,
 
 .has-orange-color,
 .has-orange-color:visited {
-  color: #e3820b;
+  color: #cc6739;
 }
 
 .has-orange-background-color {
-  background-color: #e3820b;
-  border-color: #e3820b;
+  background-color: #cc6739;
+  border-color: #cc6739;
 }
 
 .has-yellow-color,
 .has-yellow-color:visited {
-  color: #e39c01;
+  color: #d5a64e;
 }
 
 .has-yellow-background-color {
-  background-color: #e39c01;
-  border-color: #e39c01;
+  background-color: #d5a64e;
+  border-color: #d5a64e;
 }
 
 .has-green-color,
@@ -975,12 +975,12 @@ mark,
 
 .has-warning-color,
 .has-warning-color:visited {
-  color: #e39c01;
+  color: #d5a64e;
 }
 
 .has-warning-background-color {
-  background-color: #e39c01;
-  border-color: #e39c01;
+  background-color: #d5a64e;
+  border-color: #d5a64e;
 }
 
 .has-danger-color,

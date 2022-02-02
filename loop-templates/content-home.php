@@ -37,6 +37,15 @@ defined( 'ABSPATH' ) || exit;
     </div>
     <!--end people-->
 
+      <!--news section-->
+    <div class="news-content row" id="news">
+        <div class="col-md-12">
+            <h2 class='home-header'>updates</h2>
+        </div>
+        <?php plask_home_news();?>              
+    </div>
+    <!--end news-->
+
 	<footer class="entry-footer">
 
 		<?php understrap_edit_post_link(); ?>

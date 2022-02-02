@@ -141,3 +141,34 @@ function plask_home_people(){
     // Reset Post Data
     wp_reset_postdata();
 }   
+
+function plask_home_news(){
+    $html = array();
+    $args = array(
+            'post_type'  => 'post',
+            'posts_per_page' => 8,
+    );
+   
+    $news_query = new WP_Query( $args ); 
+    // The Loop
+    if ( $news_query->have_posts() ) :
+        while ( $news_query->have_posts() ) : $news_query->the_post(); 
+          // Do Stuff            
+          $url = get_the_permalink();
+          $title = get_the_title();
+          $date = get_the_date();
+            array_push($html, "
+            <div class='col-md-3'>
+                <div class='news'>              
+                    <a href='{$url}' class='news-link'>{$title}</a>
+                    <div class='news-date'>{$date}</div>
+                </div>
+            </div>
+            ");
+        endwhile;
+       
+    endif;
+    echo implode(' ',$html);
+    // Reset Post Data
+    wp_reset_postdata();
+}

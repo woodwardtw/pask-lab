@@ -428,8 +428,8 @@ progress {
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #c70804;
-  --bs-orange: #e3820b;
-  --bs-yellow: #e39c01;
+  --bs-orange: #cc6739;
+  --bs-yellow: #d5a64e;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
@@ -449,7 +449,7 @@ progress {
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
-  --bs-warning: #e39c01;
+  --bs-warning: #d5a64e;
   --bs-danger: #c70804;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
@@ -457,7 +457,7 @@ progress {
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 227, 156, 1;
+  --bs-warning-rgb: 213, 166, 78;
   --bs-danger-rgb: 199, 8, 4;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
@@ -590,15 +590,15 @@ progress {
 }
 
 .table-warning {
-  --bs-table-bg: #f9ebcc;
-  --bs-table-striped-bg: #eddfc2;
+  --bs-table-bg: #f7eddc;
+  --bs-table-striped-bg: #ebe1d1;
   --bs-table-striped-color: black;
-  --bs-table-active-bg: #e0d4b8;
+  --bs-table-active-bg: #ded5c6;
   --bs-table-active-color: black;
-  --bs-table-hover-bg: #e6d9bd;
+  --bs-table-hover-bg: #e4dbcc;
   --bs-table-hover-color: black;
   color: black;
-  border-color: #e0d4b8;
+  border-color: #ded5c6;
 }
 
 .table-danger {
@@ -863,22 +863,22 @@ progress {
 
 .has-orange-color,
 .has-orange-color:visited {
-  color: #e3820b;
+  color: #cc6739;
 }
 
 .has-orange-background-color {
-  background-color: #e3820b;
-  border-color: #e3820b;
+  background-color: #cc6739;
+  border-color: #cc6739;
 }
 
 .has-yellow-color,
 .has-yellow-color:visited {
-  color: #e39c01;
+  color: #d5a64e;
 }
 
 .has-yellow-background-color {
-  background-color: #e39c01;
-  border-color: #e39c01;
+  background-color: #d5a64e;
+  border-color: #d5a64e;
 }
 
 .has-green-color,
@@ -983,12 +983,12 @@ progress {
 
 .has-warning-color,
 .has-warning-color:visited {
-  color: #e39c01;
+  color: #d5a64e;
 }
 
 .has-warning-background-color {
-  background-color: #e39c01;
-  border-color: #e39c01;
+  background-color: #d5a64e;
+  border-color: #d5a64e;
 }
 
 .has-danger-color,
