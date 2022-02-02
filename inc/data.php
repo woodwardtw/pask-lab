@@ -70,35 +70,35 @@ $labels = array(
 }
 add_action( 'init', 'create_member_cpt', 0 );
 
-// Register Custom Post Type people
+// Register Custom Post Type Project
 // Post Type Key: projects
 function create_projects_cpt() {
 $labels = array(
     'name' => __( 'Projects', 'Post Type General Name', 'textdomain' ),
-    'singular_name' => __( 'projects', 'Post Type Singular Name', 'textdomain' ),
+    'singular_name' => __( 'Project', 'Post Type Singular Name', 'textdomain' ),
     'menu_name' => __( 'Projects', 'textdomain' ),
-    'name_admin_bar' => __( 'projects', 'textdomain' ),
+    'name_admin_bar' => __( 'Projects', 'textdomain' ),
     'archives' => __( 'Projects Archives', 'textdomain' ),
     'attributes' => __( 'Projects Attributes', 'textdomain' ),
     'parent_item_colon' => __( 'projects:', 'textdomain' ),
-    'all_items' => __( 'All projectss', 'textdomain' ),
+    'all_items' => __( 'All projects', 'textdomain' ),
     'add_new_item' => __( 'Add New projects', 'textdomain' ),
     'add_new' => __( 'Add New', 'textdomain' ),
     'new_item' => __( 'New projects', 'textdomain' ),
-    'edit_item' => __( 'Edit projects', 'textdomain' ),
-    'update_item' => __( 'Update projects', 'textdomain' ),
-    'view_item' => __( 'View projects', 'textdomain' ),
-    'view_items' => __( 'View projectss', 'textdomain' ),
-    'search_items' => __( 'Search projectss', 'textdomain' ),
+    'edit_item' => __( 'Edit project', 'textdomain' ),
+    'update_item' => __( 'Update project', 'textdomain' ),
+    'view_item' => __( 'View Project', 'textdomain' ),
+    'view_items' => __( 'View Projects', 'textdomain' ),
+    'search_items' => __( 'Search Projects', 'textdomain' ),
     'not_found' => __( 'Not found', 'textdomain' ),
     'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
     'featured_image' => __( 'Featured Image', 'textdomain' ),
     'set_featured_image' => __( 'Set featured image', 'textdomain' ),
     'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
     'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
-    'insert_into_item' => __( 'Insert into projects', 'textdomain' ),
-    'uploaded_to_this_item' => __( 'Uploaded to this projects', 'textdomain' ),
-    'items_list' => __( 'People list', 'textdomain' ),
+    'insert_into_item' => __( 'Insert into project', 'textdomain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this project', 'textdomain' ),
+    'items_list' => __( 'Project list', 'textdomain' ),
     'items_list_navigation' => __( 'projects list navigation', 'textdomain' ),
     'filter_items_list' => __( 'Filter projects list', 'textdomain' ),
   );
