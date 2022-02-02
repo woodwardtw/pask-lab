@@ -40,7 +40,7 @@ function plask_home_projects(){
             array_push($html, "
             <div class='col-md-4 {$offset}'>
                 <div class='project'>
-                    <a href='#' class='project-link'>{$title}</a>
+                    <a href='projects' class='project-link'>{$title}</a>
                 </div>
             </div>
             ");
@@ -57,7 +57,7 @@ function plask_home_people(){
     $html = array();
     $args = array(
             'post_type'  => 'member',
-            'posts_per_page' => 4,
+            'posts_per_page' => 5,
             //'orderby'        => 'rand',            
     );
    
@@ -72,22 +72,24 @@ function plask_home_people(){
             if($count == 1){
             array_push($html, "
                 <div class='col-md-4'>
-                    <div class='tall-person home-person orange'>
-                        <img src='{$img}'>
-                        <a href='#' class='project-link'>{$title}</a>
+                    <div class='orange'>
+                        <div class='tall-person home-person' style='background-image: url({$img})'>                        
+                            <a href='#' class='member-link'>{$title}</a>
+                        </div>
                     </div>
                 </div>
                 <div class='col-md-8'>
                     <div class='row'>
-                    <div class='col-md-12'><a class='members-link' href='members'>Lab<br>Members</a></div>
+                    <div class='col-md-12'><a class='members-link home-header' href='members'>Lab<br>Members</a></div>
                 ");
             }
             if($count == 2){
                 array_push($html, "
                 <div class='col-md-5'>
-                    <div class='short-person home-person red'>
-                        <img src='{$img}'>
-                        {$title}
+                    <div class='red'>
+                        <div class='short-person home-person red' style='background-image: url({$img})'>
+                            {$title}
+                        </div>
                     </div>
                 </div>
                 ");
@@ -95,19 +97,32 @@ function plask_home_people(){
             if($count == 3){
                 array_push($html, "
                 <div class='col-md-7'>
-                    <div class='short-person home-person gray'>
-                    <img src='{$img}'>
-                        {$title}
+                    <div class='gray'>
+                        <div class='short-person home-person gray' style='background-image: url({$img})'>                   
+                            {$title}
+                        </div>
                     </div>
                 </div>
                 ");
             }
             if($count == 4){
                 array_push($html, "
-                <div class='col-md-12'>
-                    <div class='med-person home-person yellow'>
-                    <img src='{$img}'>
-                        {$title}
+                <div class='col-md-7'>
+                    <div class='gray'>
+                        <div class='short-person home-person gray' style='background-image: url({$img})'>                   
+                            {$title}
+                        </div>
+                    </div>
+                </div>
+                ");
+            }
+            if($count == 5){
+                array_push($html, "
+                <div class='col-md-5'>
+                    <div class='yellow'>
+                        <div class='med-person home-person' style='background-image: url({$img})'>
+                            {$title}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,4 +135,4 @@ function plask_home_people(){
     echo implode(' ',$html);
     // Reset Post Data
     wp_reset_postdata();
-}
+}   

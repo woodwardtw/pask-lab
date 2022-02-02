@@ -211,39 +211,55 @@ p {
     height: 400px;
 }
 
-.members-link {
-    color: #fff;
+.home-header {
     font-size: 7vw;
     font-weight: 600;
     margin: 0 0 40px 0;
     line-height: 1.2;
 }
 
-.home-person img {
-    object-fit: cover;
+.members-link {
+    color: #fff;
+    line-height: 1;
+    margin-top: -20px;
+    display: block;
+}
+
+.home-person {
+    border: 10px solid #fff;
     mix-blend-mode: hard-light;
     -webkit-filter: saturate(0);
     filter: saturate(0);
+    background-size: cover;
+    background-position: center center;
 }
 
-.home-person.yellow {
+// .home-person img {
+//     object-fit: cover;
+//     mix-blend-mode: hard-light;
+//     -webkit-filter: saturate(0);
+//     filter: saturate(0);
+// }
+
+.yellow {
     background-color: $yellow;
 }
 
-.home-person.orange {
+ .orange {
     background-color: $orange;
+    height: 100%;
 }
 
-.home-person.red {
+.red {
     background-color: $red;
 }
 
-.home-person.gray {
+.gray {
     background-color: $dark-gray;
 }
 
 .tall-person {
-    height: 900px;
+    height: 100%;
     overflow: hidden;
 }
 
