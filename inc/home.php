@@ -20,7 +20,6 @@ function plask_home_projects(){
     <div class='col-md-4'>
         <div class='projects-text'>   
             {$proj_desc}
-            <a class='see-more' href='projects'>See more projects</a>
         </div>
     </div>";
     $resource_query = new WP_Query( $args ); 

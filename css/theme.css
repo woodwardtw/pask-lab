@@ -17364,10 +17364,10 @@ p {
 
 .news-content {
   background-color: #fff;
-  padding: 80px 0 80px 0;
-  background-image: url(../imgs/graph-black-top.svg);
-  background-position: top center;
-  background-repeat: repeat-x;
+  padding: 80px 0 280px 0;
+  background-image: url(../imgs/graph-black-top.svg), url(../imgs/ant-bodies.svg);
+  background-position: top center, bottom center;
+  background-repeat: repeat-x, repeat-x;
 }
 
 .news-content .home-header {
@@ -17405,7 +17405,7 @@ p {
 
 .news-date {
   font-size: 0.7rem;
-  padding: 0 0 40px 40px;
+  padding: 0 0 40px 0;
 }
 
 @media only screen and (max-width: 700px) {
