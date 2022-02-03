@@ -38,11 +38,13 @@ defined( 'ABSPATH' ) || exit;
     <!--end people-->
 
       <!--news section-->
-    <div class="news-content row" id="news">
+    <div class="news-content row" id="news">       
         <div class="col-md-12">
-            <h2 class='home-header'>updates</h2>
+            <h2 class='home-header news-header'>updates</h2>
         </div>
-        <?php plask_home_news();?>              
+                <?php plask_home_news();?>
+        </div>
+        
     </div>
     <!--end news-->
 

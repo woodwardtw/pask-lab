@@ -17087,10 +17087,6 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
-body {
-  background-color: #e5e5e5;
-}
-
 #main-nav {
   padding: 0;
   margin: 0;
@@ -17184,6 +17180,10 @@ p {
 
 #menu-home li a:hover {
   text-decoration: none;
+}
+
+#content {
+  background-color: black;
 }
 
 .about-content {
@@ -17364,15 +17364,17 @@ p {
 
 .news-content {
   background-color: #fff;
-  padding: 80px 0 280px 0;
-  background-image: url(../imgs/graph-black-top.svg), url(../imgs/ant-bodies.svg);
-  background-position: top center, bottom center;
-  background-repeat: repeat-x, repeat-x;
+  padding: 280px 0 280px 0;
+  background-image: url(../imgs/graph-black-top.svg), url(../imgs/ant-bodies.svg), url(../imgs/poly.svg);
+  background-position: top center, bottom center, bottom center;
+  background-repeat: repeat-x, repeat-x, repeat-x;
+  background-size: contain, contain, 100px;
 }
 
 .news-content .home-header {
-  margin-top: 300px;
-  margin-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  color: black;
 }
 
 .news {
@@ -17406,6 +17408,10 @@ p {
 .news-date {
   font-size: 0.7rem;
   padding: 0 0 40px 0;
+}
+
+.entry-footer {
+  background-color: black;
 }
 
 @media only screen and (max-width: 700px) {
