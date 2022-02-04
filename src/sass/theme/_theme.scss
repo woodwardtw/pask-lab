@@ -425,14 +425,18 @@ p {
 
 .member-img-holder {
     position: relative;
-    margin: 100px;    
+    margin: 100px 70px;
+    padding: 2px;
 }
 
 #member-content h1 {
     color: #fff;
     font-size: 7vw;
     margin-top: 150px;
-    text-align: center;
+}
+
+.member-top-line {
+    border-top: 2px solid #fff;
 }
 
 .member-img-holder:after {
@@ -447,6 +451,19 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+.year-label {
+    font-size: 1.2vw;
+    text-align: right;
+    display: inline-block;
+    line-height: 1;
+}
+
+.year {
+    font-size: 3vw;
+    display: inline-block;
+}
+
 
   @media only screen and (max-width: 700px) {
     #menu-home {

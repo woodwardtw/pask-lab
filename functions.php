@@ -29,6 +29,7 @@ $understrap_includes = array(
 	'/acf.php',                             // Load ACF functions.
 	'/data.php',                            // Load cpts, custom tax etc.
 	'/home.php',                            // Load the homepage functions
+	'/member.php',                          // Load the member functions
 	'/deprecated.php',                      // Load deprecated functions.
 );
 

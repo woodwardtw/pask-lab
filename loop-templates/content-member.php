@@ -13,15 +13,18 @@ defined( 'ABSPATH' ) || exit;
 
 
 <div class="row">
-	<div class="col-md-5 black">
+	<div class="col-md-6 black">
 		<div class="member-img-holder">
 			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 		</div>
 	</div>
-	<div class="col-md-7 black">
+	<div class="col-md-6 black">
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
+		<div class="row member-top-line">
+			<?php echo pask_grad_year();?>
+		</div>
 	</div>
 	<div class="entry-content">
 
