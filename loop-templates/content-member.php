@@ -22,7 +22,8 @@ defined( 'ABSPATH' ) || exit;
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
-		<div class="row member-top-line">
+		<div class="row">
+			<?php echo pask_major();?>
 			<?php echo pask_grad_year();?>
 		</div>
 	</div>

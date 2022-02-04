@@ -17466,6 +17466,10 @@ p {
   border-top: 2px solid #fff;
 }
 
+.member-bottom-line {
+  border-bottom: 2px solid #fff;
+}
+
 .member-img-holder:after {
   content: "";
   display: block;
@@ -17479,14 +17483,18 @@ p {
   background-size: cover;
 }
 
-.year-label {
+.year-holder, .major-holder {
+  text-align: center;
+}
+
+.year-label, .major-label {
   font-size: 1.2vw;
   text-align: right;
   display: inline-block;
   line-height: 1;
 }
 
-.year {
+.year, .major {
   font-size: 3vw;
   display: inline-block;
 }
