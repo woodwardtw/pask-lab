@@ -414,6 +414,40 @@ p {
     background-color: $black;
 }
 
+
+//lab member single pages 
+
+#member-content #main {
+    width: 100%;
+    background-color: $black;
+    color: #fff;
+}
+
+.member-img-holder {
+    position: relative;
+    margin: 100px;    
+}
+
+#member-content h1 {
+    color: #fff;
+    font-size: 7vw;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.member-img-holder:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    background-image: url(../imgs/member-overlay.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   @media only screen and (max-width: 700px) {
     #menu-home {
         border-top: 2px solid $black;

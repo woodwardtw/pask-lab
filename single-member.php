@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="single-wrapper">
 
-	<div class="container-fluid" id="content" tabindex="-1">
+	<div class="container-fluid" id="member-content" tabindex="-1">
 
 		<div class="row">
 
