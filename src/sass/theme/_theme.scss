@@ -124,8 +124,12 @@ p {
 
 .about-content {
     background: $black;
-    background: linear-gradient(45deg,$red 20%, $black 20%);
+    // background: linear-gradient(45deg,$red 20%, $black 20%);
     padding: 80px 0;   
+    background-image: url(../imgs/pent-red.svg);
+    background-position: bottom left;
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
 
 .red-home {
@@ -142,11 +146,13 @@ p {
 }
 
 .projects-content {
-    // background-color: $red;
-    background: linear-gradient(45deg,$red 90%, $black 10%);
+    background-color: $red;
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: contain;
+    background-image: url(../imgs/pent-black.svg);
+    background-position: top right;
+    background-size: 55%;
+    background-repeat: no-repeat;
     padding: 80px 0;
 }
 
