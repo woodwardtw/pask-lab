@@ -16391,6 +16391,8 @@ p {
   color: #fff;
   font-size: 7vw;
   margin-top: 150px;
+  margin-bottom: 20px;
+  line-height: 1;
 }
 
 .member-top-line {
