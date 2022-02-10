@@ -16126,8 +16126,13 @@ p {
   background-repeat: no-repeat;
 }
 
-.about-text, .projects-text {
+.about-text {
   padding: 60px 5vw;
+  background-color: #fff;
+}
+
+.projects-text {
+  padding: 60px 3vw;
   background-color: #fff;
 }
 

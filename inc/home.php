@@ -77,11 +77,13 @@ function plask_home_people(){
             if($count == 1){
             array_push($html, "
                 <div class='col-md-4'>
-                    <div class='orange'>
-                        <div class='tall-person home-person' style='background-image: url({$img})'>                        
-                            <a href='{$url}' class='member-link'>{$title}</a>
+                    <a href='{$url}' class='member-link'>
+                        <div class='orange'>
+                            <div class='tall-person home-person' style='background-image: url({$img})'>                        
+                                {$title}
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class='col-md-8'>
                     <div class='row'>
@@ -91,44 +93,52 @@ function plask_home_people(){
             if($count == 2){
                 array_push($html, "
                 <div class='col-md-5'>
-                    <div class='red'>
-                        <div class='short-person home-person red' style='background-image: url({$img})'>
-                            <a href='{$url}' class='member-link'>{$title}</a>
+                    <a href='{$url}' class='member-link'>
+                        <div class='red'>
+                            <div class='short-person home-person red' style='background-image: url({$img})'>
+                                {$title}
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 ");
             }
             if($count == 3){
                 array_push($html, "
                 <div class='col-md-7'>
-                    <div class='gray'>
-                        <div class='short-person home-person gray' style='background-image: url({$img})'>                   
-                            <a href='{$url}' class='member-link'>{$title}</a>
+                    <a href='{$url}' class='member-link'>
+                        <div class='gray'>
+                            <div class='short-person home-person gray' style='background-image: url({$img})'>                   
+                                {$title}
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 ");
             }
             if($count == 4){
                 array_push($html, "
                 <div class='col-md-7 last-img'>
-                    <div class='gray'>
-                        <div class='short-person home-person gray' style='background-image: url({$img})'>                   
-                            <a href='{$url}' class='member-link'>{$title}</a>
+                    <a href='{$url}' class='member-link'>
+                        <div class='gray'>
+                            <div class='short-person home-person gray' style='background-image: url({$img})'>                   
+                                {$title}
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 ");
             }
             if($count == 5){
                 array_push($html, "
                 <div class='col-md-5 last-img'>
-                    <div class='yellow'>
-                        <div class='med-person home-person' style='background-image: url({$img})'>
-                            <a href='{$url}' class='member-link'>{$title}</a>
+                    <a href='{$url}' class='member-link'>
+                        <div class='yellow'>
+                            <div class='med-person home-person' style='background-image: url({$img})'>
+                            {$title}
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             </div>
