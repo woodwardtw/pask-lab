@@ -23,8 +23,9 @@ defined( 'ABSPATH' ) || exit;
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
 		<div class="row">
-			<?php echo pask_major();?>
-			<?php echo pask_grad_year();?>
+			<?php echo pask_member_title();?>
+			<?php echo pask_member_major();?>
+			<?php echo pask_member_grad_year();?>
 			<?php echo pask_member_bio();?>
 		</div>
 	</div>

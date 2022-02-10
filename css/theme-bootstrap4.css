@@ -16423,19 +16423,29 @@ p {
   background-size: cover;
 }
 
+.title-holder {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 3vw;
+  margin-left: 25px;
+}
+
 .year-holder, .major-holder {
-  text-align: center;
+  text-align: left;
+  padding-left: 25px;
 }
 
 .year-label, .major-label {
-  font-size: 1.2vw;
+  font-size: 0.9vw;
   text-align: right;
   display: inline-block;
   line-height: 1;
 }
 
 .year, .major {
-  font-size: 3vw;
+  font-size: 2vw;
   display: inline-block;
 }
 
