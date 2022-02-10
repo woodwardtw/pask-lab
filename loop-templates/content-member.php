@@ -17,6 +17,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="member-img-holder">
 			<?php echo get_the_post_thumbnail( $post->ID, 'member', array( 'class' => 'member-square' )); ?>
 		</div>
+		<?php echo pask_member_projects();?>
 	</div>
 	<div class="col-md-6 black">
 		<header class="entry-header">
@@ -28,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php echo pask_member_grad_year();?>
 			<?php echo pask_member_bio();?>
 		</div>
-	</div>
+	</div>	
 	<div class="entry-content">
 
 		<?php
