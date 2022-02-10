@@ -18,7 +18,7 @@ function plask_home_projects(){
     $proj_desc = get_field('projects');
     $proj_intro = "
     <div class='col-md-4'>
-        <div class='projects-text'>   
+        <div class='project projects-text'>   
             {$proj_desc}
         </div>
     </div>";

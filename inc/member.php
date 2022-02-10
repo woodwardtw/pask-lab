@@ -35,3 +35,18 @@ function pask_grad_year(){
         ";
     }
 }
+
+function pask_member_bio(){
+    if (get_field('bio')){
+        $bio = get_field('bio');
+        return "
+            <div class='col-md-12'>
+                <div class='member-bio'>
+                    {$bio}
+                </div>
+            </div>
+        ";
+    }
+}
+
+add_image_size( 'member', '600', '600', true );

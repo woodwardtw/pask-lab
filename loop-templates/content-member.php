@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 <div class="row">
 	<div class="col-md-6 black">
 		<div class="member-img-holder">
-			<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+			<?php echo get_the_post_thumbnail( $post->ID, 'member', array( 'class' => 'member-square' )); ?>
 		</div>
 	</div>
 	<div class="col-md-6 black">
@@ -25,6 +25,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="row">
 			<?php echo pask_major();?>
 			<?php echo pask_grad_year();?>
+			<?php echo pask_member_bio();?>
 		</div>
 	</div>
 	<div class="entry-content">
