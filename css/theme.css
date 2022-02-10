@@ -17528,8 +17528,18 @@ p {
   margin: 100px 80px 100px 30px;
 }
 
-.member-project h2, .member-project .h2, .member-project h3, .member-project .h3 {
+.associated-projects {
+  padding: 30px;
+}
+
+.associated-projects h2, .associated-projects .h2, .member-project h3, .member-project .h3 {
   color: #fff;
+}
+
+.member-project h3, .member-project .h3 {
+  font-size: 2vw;
+  margin-left: 3vw;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 700px) {

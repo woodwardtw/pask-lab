@@ -71,7 +71,7 @@ function pask_member_projects(){
            $img = get_the_post_thumbnail($id, 'medium');
            $url = get_permalink( $id);
            $html .= "
-           <div class='member-project col-md-4'>
+           <div class='member-project'>
                 <a href='{$url}'>
                     <div class=''>
                         <h3>{$title}</h2>
@@ -80,10 +80,9 @@ function pask_member_projects(){
            </div>
            ";
         }
-        return "<div class='row d-flex justify-content-around'>
-                    <div class='col-md-12'>
-                        <h2>Associated Projects</h2>
-                    </div>
+        return "
+            <div class='associated-projects'>
+                <h2>Associated Projects</h2>
                         $html
             </div>";
     }
