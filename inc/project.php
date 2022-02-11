@@ -20,7 +20,7 @@ function pask_project_members(){
            $html .= "
            <div class='project-member'>
                 <a href='{$url}'>
-                    <div class=''>
+                    <div class='project-member'>
                         <h3>{$title}</h2>
                     </div>
                 </a>

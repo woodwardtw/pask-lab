@@ -14,7 +14,7 @@ function pask_member_title(){
         return "
             <div class='col-md-11'>
                 <div class='title-holder member-top-line member-bottom-line'>
-                    <div class='title'>{$title}</div>
+                    <div class='member-title'>{$title}</div>
                 </div>
             </div>
         ";

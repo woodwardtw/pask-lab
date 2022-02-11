@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="col-md-6">
 		<?php echo pask_project_members();?>
 	</div>
-	<div class="entry-content col-md-6">
+	<div class="entry-content col-md-6 project-description">
 
 		<?php
 		the_content();

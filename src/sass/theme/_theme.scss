@@ -455,6 +455,7 @@ p {
     display: block;
     margin: 0 auto;
     width: 100%;
+    padding: 5px;
 }
 
 .member-img-holder:after {
@@ -474,9 +475,10 @@ p {
     margin-bottom: 20px;
 }
 
-.title {
+.member-title {
     font-size: 3vw;
-    margin-left: 25px;    
+    margin-left: 25px;
+    line-height: 1.2;
 }
 
 .year-holder, .major-holder {
@@ -531,6 +533,16 @@ p {
     line-height: 1;
 }
 
+.project-description p{
+    color: #fff;
+}
+
+.project-member h3 {
+    color: #fff;
+    font-size: 2vw;
+    margin-left: 3vw;
+    margin-top: 20px;
+}
 
   @media only screen and (max-width: 700px) {
     #menu-home {
