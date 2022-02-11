@@ -17466,7 +17466,7 @@ p {
   color: #fff;
   font-size: 7vw;
   margin-top: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 1;
 }
 
@@ -17499,7 +17499,8 @@ p {
 }
 
 .title-holder {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .member-title {
