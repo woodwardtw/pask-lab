@@ -5,7 +5,7 @@
         {
             "key": "field_6206620735f0d",
             "label": "Lab Member Relationship",
-            "name": "lab_member_relationship",
+            "name": "project_relationship",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -47,5 +47,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644585520
+    "modified": 1644585634
 }

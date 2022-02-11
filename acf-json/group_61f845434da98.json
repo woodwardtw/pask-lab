@@ -90,7 +90,7 @@
         {
             "key": "field_62055ca7d2971",
             "label": "Associated Projects",
-            "name": "associated_projects",
+            "name": "project_relationship",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -131,5 +131,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644518598
+    "modified": 1644585649
 }
