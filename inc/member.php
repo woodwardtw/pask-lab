@@ -63,8 +63,8 @@ function pask_member_bio(){
 
 function pask_member_projects(){
     $html = '';
-    if(get_field('associated_projects')){
-        $projects = get_field('associated_projects');
+    if(get_field('project_relationship')){
+        $projects = get_field('project_relationship');
         foreach ($projects as $project) {
            $id = $project->ID;
            $title = $project->post_title;

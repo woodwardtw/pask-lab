@@ -30,6 +30,7 @@ $understrap_includes = array(
 	'/data.php',                            // Load cpts, custom tax etc.
 	'/home.php',                            // Load the homepage functions
 	'/member.php',                          // Load the member functions
+	'/project.php',                         // Load the project functions
 	'/deprecated.php',                      // Load deprecated functions.
 );
 

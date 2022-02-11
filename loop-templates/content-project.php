@@ -21,15 +21,16 @@ defined( 'ABSPATH' ) || exit;
 		<header class="entry-header">
 			<?php the_title( '<h1 class="project-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
-		<div class="row">
 		
-		</div>
-	</div>	
-	<div class="entry-content">
+	</div>
+	<div class="col-md-6">
+		<?php echo pask_project_members();?>
+	</div>
+	<div class="entry-content col-md-6">
 
 		<?php
 		the_content();
-		understrap_link_pages();
+		//understrap_link_pages();
 		?>
 
 	</div><!-- .entry-content -->

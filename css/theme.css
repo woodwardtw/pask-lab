@@ -17494,7 +17494,7 @@ p {
   width: 100%;
   background-image: url(../imgs/member-overlay.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .title-holder {
