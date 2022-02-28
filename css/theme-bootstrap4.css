@@ -16503,6 +16503,15 @@ p {
 }
 
 @media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 6vw;
+  }
+
+  .project-member h3, .member-project h3 {
+    font-size: 6vw;
+    font-weight: 100;
+  }
+
   #menu-home {
     border-top: 2px solid black;
     border-left: none;
@@ -16533,14 +16542,11 @@ p {
   .project-description, .member-bio {
     padding: 0 30px;
     line-height: 1.2;
-  }
-
-  .project-member h3 {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 
   .member-bio p, .project-description p {
-    margin: 20px 30px 20px 0;
+    margin: 20px;
   }
 }
 
