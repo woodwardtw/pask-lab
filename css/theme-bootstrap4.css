@@ -16457,7 +16457,7 @@ p {
   display: inline-block;
 }
 
-.member-bio p {
+.member-bio p, .project-description p {
   color: #fff;
   margin: 100px 70px 100px 0;
 }
