@@ -16524,6 +16524,24 @@ p {
   .projects-text {
     margin-left: 0;
   }
+
+  #project-content h1 {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .project-description, .member-bio {
+    padding: 0 30px;
+    line-height: 1.2;
+  }
+
+  .project-member h3 {
+    font-size: 6vw;
+  }
+
+  .member-bio p, .project-description p {
+    margin: 20px 30px 20px 0;
+  }
 }
 
 /*# sourceMappingURL=theme-bootstrap4.css.map */
