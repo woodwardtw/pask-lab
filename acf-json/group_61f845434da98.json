@@ -6,7 +6,7 @@
             "key": "field_61f84549855f4",
             "label": "Graduation Year",
             "name": "graduation_year",
-            "type": "radio",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,20 +15,11 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "2020": "2020",
-                "2021": "2021",
-                "2022": "2022",
-                "2023": "2023",
-                "2024": "2024",
-                "2025": "2025"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
             "default_value": "",
-            "layout": "vertical",
-            "return_format": "value",
-            "save_other_choice": 0
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_61f845e6855f5",
@@ -39,7 +30,26 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "75",
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6245bfd4318e6",
+            "label": "Minor",
+            "name": "minor",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
                 "class": "",
                 "id": ""
             },
@@ -153,5 +163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648730327
+    "modified": 1648738320
 }
