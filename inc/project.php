@@ -29,7 +29,7 @@ function pask_project_members(){
         }
         return "
             <div class='associated-projects'>
-                <h2>Associated Lab Members</h2>
+                <h2>Project Members</h2>
                         $html
             </div>";
     }

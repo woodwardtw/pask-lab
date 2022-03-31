@@ -111,6 +111,28 @@
             "min": "",
             "max": "",
             "return_format": "object"
+        },
+        {
+            "key": "field_6245a085bc7f8",
+            "label": "Status",
+            "name": "status",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "member_status",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
         }
     ],
     "location": [
@@ -131,5 +153,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644585649
+    "modified": 1648730327
 }
