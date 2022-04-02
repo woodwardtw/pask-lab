@@ -18,6 +18,9 @@ function pask_project_members(){
            $img = get_the_post_thumbnail($id, 'medium');
            $url = get_permalink( $id);
            $grad = get_the_terms($id, 'member_status');
+           if($grad){
+               $status = 'emeritus';
+           } else            
            $html .= "
            <div class='project-member'>
                 <a href='{$url}'>
