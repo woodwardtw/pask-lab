@@ -260,7 +260,7 @@ p {
     display: block;
     text-transform: lowercase;
     transition: all .6s ease;
-    background-image: url(../imgs/arrow-right.svg));
+    background-image: url(../imgs/arrow-right.svg);
 }
 
 .members-link:hover {
@@ -452,11 +452,13 @@ p {
     border-bottom: 2px solid #fff;
 }
 
-.member-square {
+#member-content .member-square {
     display: block;
     margin: 0 auto;
     width: 100%;
+    height: 580px;
     padding: 5px;
+    object-fit: cover;
 }
 
 .member-img-holder:after {
@@ -483,7 +485,7 @@ p {
     line-height: 1.2;
 }
 
-.year-holder, .major-holder {
+.year-holder, .major-holder, .minor-holder {
     text-align: left;
     padding-left: 25px;
 }
