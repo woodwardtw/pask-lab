@@ -126,7 +126,7 @@ function plask_home_people(){
             }
             if($count == 4 || $count == 9){
                 array_push($html, "
-                <div class='col-md-7 last-img'>
+                <div class='col-md-7'>
                     <a href='{$url}' class='member-link'>
                         <div class='gray'>
                             <div class='short-person home-person gray' style='background-image: url({$img})'>                   
@@ -139,7 +139,7 @@ function plask_home_people(){
             }
             if($count == 5 || $count == 10 || $count == 6){
                 array_push($html, "
-                <div class='col-md-5 last-img'>
+                <div class='col-md-5'>
                     <a href='{$url}' class='member-link'>
                         <div class='yellow'>
                             <div class='med-person home-person' style='background-image: url({$img})'>
