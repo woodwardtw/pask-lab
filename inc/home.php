@@ -147,15 +147,13 @@ function plask_home_people(){
                             </div>
                         </div>
                     </a>
-                </div>
-            </div>
-            </div>
+                </div>           
                 ");
             }
         endwhile;
        
     endif;
-    echo implode(' ',$html). '<div class="col-md-12"></div>';
+    echo implode(' ',$html) . ' </div></div>';
     // Reset Post Data
     wp_reset_postdata();
 }   
