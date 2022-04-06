@@ -61,8 +61,16 @@ function plask_home_people(){
     $html = array();
     $args = array(
             'post_type'  => 'member',
-            'posts_per_page' => 5,
-            //'orderby'        => 'rand',            
+            'posts_per_page' => 10,
+            'orderby'        => 'rand',
+              'tax_query' => array( // (array) - use taxonomy parameters (available with Version 3.1).
+                array(
+                'taxonomy' => 'member_status', // (string) - Taxonomy.
+                'field' => 'slug', // (string) - Select taxonomy term by Possible values are 'term_id', 'name', 'slug' or 'term_taxonomy_id'. Default value is 'term_id'.
+                'terms' => array( 'emeritus' ), // (int/string/array) - Taxonomy term(s).
+                'operator' => 'NOT IN' // (string) - Operator to test. Possible values are 'IN', 'NOT IN', 'AND', 'EXISTS' and 'NOT EXISTS'. Default value is 'IN'.
+                ),
+              )
     );
    
     $people_query = new WP_Query( $args ); 
@@ -74,7 +82,7 @@ function plask_home_people(){
             $title = get_the_title();
             $img = get_the_post_thumbnail_url(get_the_ID(),'large'); 
             $url = get_the_permalink();
-            if($count == 1){
+            if($count == 1 || $count == 6){
             array_push($html, "
                 <div class='col-md-4'>
                     <a href='{$url}' class='member-link'>
@@ -90,7 +98,7 @@ function plask_home_people(){
                     <div class='col-md-12'><a class='members-link home-header' href='members'>Lab<br>Members</a></div>
                 ");
             }
-            if($count == 2){
+            if($count == 2 || $count == 7){
                 array_push($html, "
                 <div class='col-md-5'>
                     <a href='{$url}' class='member-link'>
@@ -103,7 +111,7 @@ function plask_home_people(){
                 </div>
                 ");
             }
-            if($count == 3){
+            if($count == 3 || $count == 8){
                 array_push($html, "
                 <div class='col-md-7'>
                     <a href='{$url}' class='member-link'>
@@ -116,7 +124,7 @@ function plask_home_people(){
                 </div>
                 ");
             }
-            if($count == 4){
+            if($count == 4 || $count == 9){
                 array_push($html, "
                 <div class='col-md-7 last-img'>
                     <a href='{$url}' class='member-link'>
@@ -129,7 +137,7 @@ function plask_home_people(){
                 </div>
                 ");
             }
-            if($count == 5){
+            if($count == 5 || $count == 10){
                 array_push($html, "
                 <div class='col-md-5 last-img'>
                     <a href='{$url}' class='member-link'>
