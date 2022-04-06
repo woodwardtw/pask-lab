@@ -27,7 +27,20 @@ function pask_member_major(){
         return "
             <div class='col-md-7'>
                 <div class='major-holder member-bottom-line'>
-                    <div class='major'>{$major}</div>
+                    <div class='major'>Major: {$major}</div>
+                </div>
+            </div>
+        ";
+    }
+}
+
+function pask_member_minor(){
+    if(get_field('minor')){
+        $minor = get_field('minor');
+        return "
+            <div class='col-md-7'>
+                <div class='minor-holder member-bottom-line'>
+                    <div class='minor'>Minor: {$minor}</div>
                 </div>
             </div>
         ";
@@ -40,7 +53,7 @@ function pask_member_grad_year(){
         return "
             <div class='col-md-4'>
                 <div class='year-holder member-bottom-line'>
-                    <div class='year-label'>graduation<br>year:</div>
+                    <div class='year-label'>grad<br>year:</div>
                     <div class='year'>{$year}</div>
                 </div>
             </div>
