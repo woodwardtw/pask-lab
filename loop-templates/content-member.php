@@ -25,9 +25,9 @@ defined( 'ABSPATH' ) || exit;
 		</header><!-- .entry-header -->
 		<div class="row">
 			<?php echo pask_member_title();?>
-			<?php echo pask_member_major();?>
-			<?php echo pask_member_minor();?>
+			<?php echo pask_member_major();?>			
 			<?php echo pask_member_grad_year();?>
+			<?php echo pask_member_minor();?>
 			<?php echo pask_member_bio();?>
 		</div>
 	</div>	

@@ -53,7 +53,7 @@ function pask_member_grad_year(){
         return "
             <div class='col-md-4'>
                 <div class='year-holder member-bottom-line'>
-                    <div class='year-label'>grad<br>year:</div>
+                    <div class='year-label'>grad&nbsp;<br>year:</div>
                     <div class='year'>{$year}</div>
                 </div>
             </div>
