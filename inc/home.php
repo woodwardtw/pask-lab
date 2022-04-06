@@ -82,7 +82,7 @@ function plask_home_people(){
             $title = get_the_title();
             $img = get_the_post_thumbnail_url(get_the_ID(),'large'); 
             $url = get_the_permalink();
-            if($count == 1 || $count == 6){
+            if($count == 1 ){
             array_push($html, "
                 <div class='col-md-4'>
                     <a href='{$url}' class='member-link'>
@@ -137,7 +137,7 @@ function plask_home_people(){
                 </div>
                 ");
             }
-            if($count == 5 || $count == 10){
+            if($count == 5 || $count == 10 || $count == 6){
                 array_push($html, "
                 <div class='col-md-5 last-img'>
                     <a href='{$url}' class='member-link'>
@@ -155,7 +155,7 @@ function plask_home_people(){
         endwhile;
        
     endif;
-    echo implode(' ',$html);
+    echo implode(' ',$html). '<div class="col-md-12"></div>';
     // Reset Post Data
     wp_reset_postdata();
 }   
