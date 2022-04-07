@@ -17334,6 +17334,7 @@ p {
   filter: saturate(0);
   background-size: cover;
   background-position: center center;
+  padding: 20px;
 }
 
 .yellow {
@@ -17610,6 +17611,10 @@ p {
 
   .projects-text {
     margin-left: 0;
+  }
+
+  .project-link {
+    font-size: 5vw;
   }
 
   #project-content h1, #project-content .h1 {
