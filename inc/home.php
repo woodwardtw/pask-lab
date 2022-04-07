@@ -95,7 +95,7 @@ function plask_home_people(){
                 </div>
                 <div class='col-md-8'>
                     <div class='row'>
-                    <div class='col-md-12'><a class='members-link home-header' href='members'>Lab<br>Members</a></div>
+                    <div class='col-md-12'><a class='members-link home-header' href='lab-members'>Lab<br>Members</a></div>
                 ");
             }
             if($count == 2 || $count == 7){
