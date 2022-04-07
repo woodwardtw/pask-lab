@@ -16546,6 +16546,7 @@ p {
 
   .project-link {
     font-size: 5vw;
+    left: 0;
   }
 
   #project-content h1 {
@@ -16561,6 +16562,15 @@ p {
 
   .member-bio p, .project-description p {
     margin: 20px;
+  }
+
+  .tall-person {
+    height: 340px;
+    margin-bottom: 30px;
+  }
+
+  .med-person {
+    margin-bottom: 30px;
   }
 }
 
