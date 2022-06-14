@@ -61,4 +61,4 @@ function ar_home_menu() {
    add_action( 'init', 'ar_home_menu' );
 
 
-   add_image_size( 'bio-pic', 500, 500,true);
+   add_image_size( 'bio-pic', 650, 650,true);
