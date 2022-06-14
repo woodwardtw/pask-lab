@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 <div class="row">
 	<div class="col-md-6 black">
 		<div class="member-img-holder">
-			<?php echo get_the_post_thumbnail( $post->ID, 'member', array( 'class' => 'member-square' )); ?>
+			<?php echo get_the_post_thumbnail( $post->ID, 'bio-pic', array( 'class' => 'member-square' )); ?>
 		</div>
 		<?php echo pask_member_projects();?>
 	</div>
