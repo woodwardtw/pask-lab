@@ -136,13 +136,13 @@
                 "id": ""
             },
             "taxonomy": "member_status",
-            "field_type": "checkbox",
+            "field_type": "radio",
+            "allow_null": 1,
             "add_term": 1,
             "save_terms": 1,
             "load_terms": 1,
             "return_format": "id",
-            "multiple": 0,
-            "allow_null": 0
+            "multiple": 0
         }
     ],
     "location": [
@@ -163,5 +163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648738320
+    "modified": 1655812208
 }
