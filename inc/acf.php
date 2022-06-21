@@ -166,7 +166,7 @@ function plask_lab_active_people(){
         while ( $people_query->have_posts() ) : $people_query->the_post();
           // Do Stuff
             $title = get_the_title();
-            $img = get_the_post_thumbnail_url(get_the_ID(),'large'); 
+            $img = get_the_post_thumbnail_url(get_the_ID(),'bio-pic'); 
             $url = get_the_permalink();
           	$html .= "<div class='col-md-4'>
 	          			<div class='ratio ratio-1x1 lab-member-page'>
@@ -207,7 +207,7 @@ function plask_lab_emeritus_people(){
         while ( $people_query->have_posts() ) : $people_query->the_post();
           // Do Stuff
             $title = get_the_title();
-            $img = get_the_post_thumbnail_url(get_the_ID(),'large'); 
+            $img = get_the_post_thumbnail_url(get_the_ID(),'bio-pic'); 
             $url = get_the_permalink();
           	$html .= "<div class='col-md-4'>
 	          			<div class='ratio ratio-1x1 lab-member-page'>
