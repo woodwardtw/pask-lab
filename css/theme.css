@@ -17550,13 +17550,22 @@ p {
   margin-top: 20px;
 }
 
-.lab-member-page {
+.lab-page h2, .lab-page .h2 {
+  color: #fff;
+}
+
+.lab-member-page-square {
   border: 1px solid #fff;
   margin-bottom: 20px;
 }
 
 .lab-member-page a {
   color: #fff;
+}
+
+.member-fit {
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 #project-content #main {

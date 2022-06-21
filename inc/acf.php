@@ -170,7 +170,10 @@ function plask_lab_active_people(){
             $url = get_the_permalink();
           	$html .= "<div class='col-md-4'>
 	          			<div class='ratio ratio-1x1 lab-member-page'>
-							<a href='{$url}'>{$title}</a>
+		          			<a href='{$url}'>
+		          				<img class='member-fit' src='{$img}' alt='Profile picture for {$title}.'>	
+								{$title}
+							</a>
 						</div>
 					</div>";
         endwhile;
@@ -208,7 +211,10 @@ function plask_lab_emeritus_people(){
             $url = get_the_permalink();
           	$html .= "<div class='col-md-4'>
 	          			<div class='ratio ratio-1x1 lab-member-page'>
-							<a href='{$url}'>{$title}</a>
+	          				<a href='{$url}'>
+	          					<img class='member-fit' src='{$img}' alt='Profile picture for {$title}.'>
+								{$title}
+							</a>
 						</div>
 					</div>";
         endwhile;
