@@ -16481,6 +16481,15 @@ p {
   margin-top: 20px;
 }
 
+.lab-member-page {
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+.lab-member-page a {
+  color: #fff;
+}
+
 #project-content #main {
   width: 100%;
   background-color: black;

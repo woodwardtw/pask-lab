@@ -21,10 +21,17 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_content();
-		understrap_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
+	<h2>Active Members</h2>
+	<div class="row">
+			<?php plask_lab_active_people();?>
+	</div>
+	<h2>Emeritus Members</h2>
+	<div class="row">
+			<?php plask_lab_emeritus_people();?>
+	</div>
 
 	<footer class="entry-footer">
 
