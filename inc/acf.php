@@ -148,7 +148,7 @@ function plask_lab_active_people(){
     $args = array(
             'post_type'  => 'member',
             'posts_per_page' => -1,
-            'orderby'        => 'ASC',
+            'orderby'        => 'rand',
               'tax_query' => array( // (array) - use taxonomy parameters (available with Version 3.1).
                 array(
                 'taxonomy' => 'member_status', // (string) - Taxonomy.
@@ -189,7 +189,7 @@ function plask_lab_emeritus_people(){
     $args = array(
             'post_type'  => 'member',
             'posts_per_page' => -1,
-            'orderby'        => 'ASC',
+            'orderby'        => 'rand',
               'tax_query' => array( // (array) - use taxonomy parameters (available with Version 3.1).
                 array(
                 'taxonomy' => 'member_status', // (string) - Taxonomy.

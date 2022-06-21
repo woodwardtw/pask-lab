@@ -17552,15 +17552,18 @@ p {
 
 .lab-page h2, .lab-page .h2 {
   color: #fff;
+  margin-top: 70px;
 }
 
-.lab-member-page-square {
+.ratio-1x1.lab-member-page {
   border: 1px solid #fff;
-  margin-bottom: 20px;
+  margin: 20px auto 50px auto;
 }
 
 .lab-member-page a {
   color: #fff;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .member-fit {
