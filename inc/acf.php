@@ -140,3 +140,39 @@ function pask_json_load_point( $paths ) {
     return $paths;
     
 }
+
+
+//lab members display
+
+function plask_lab_active_people(){
+    $args = array(
+            'post_type'  => 'member',
+            'posts_per_page' => -1,
+            'orderby'        => 'rand',
+              'tax_query' => array( // (array) - use taxonomy parameters (available with Version 3.1).
+                array(
+                'taxonomy' => 'member_status', // (string) - Taxonomy.
+                'field' => 'slug', // (string) - Select taxonomy term by Possible values are 'term_id', 'name', 'slug' or 'term_taxonomy_id'. Default value is 'term_id'.
+                'terms' => array( 'emeritus' ), // (int/string/array) - Taxonomy term(s).
+                'operator' => 'NOT IN' // (string) - Operator to test. Possible values are 'IN', 'NOT IN', 'AND', 'EXISTS' and 'NOT EXISTS'. Default value is 'IN'.
+                ),
+              )
+    );
+   
+    $people_query = new WP_Query( $args ); 
+    // The Loop
+    $html = '';
+    if ( $people_query->have_posts() ) :
+        while ( $people_query->have_posts() ) : $people_query->the_post();
+          // Do Stuff
+            $title = get_the_title();
+            $img = get_the_post_thumbnail_url(get_the_ID(),'large'); 
+            $url = get_the_permalink();
+          
+        endwhile;
+       
+    endif;
+    echo $html;
+    // Reset Post Data
+    wp_reset_postdata();
+}   
