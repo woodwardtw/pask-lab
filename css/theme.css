@@ -17494,20 +17494,6 @@ p {
   aspect-ratio: 1/1;
 }
 
-.member-img-holder:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(../imgs/member-overlay.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
-
 .cover-up {
   position: absolute;
   top: 0;
