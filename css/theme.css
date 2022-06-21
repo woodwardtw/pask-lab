@@ -17550,6 +17550,10 @@ p {
   margin-top: 20px;
 }
 
+.lab-page .entry-content p {
+  color: #fff;
+}
+
 .lab-page h2, .lab-page .h2 {
   color: #fff;
   margin-top: 70px;
