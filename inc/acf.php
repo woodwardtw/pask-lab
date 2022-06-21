@@ -144,6 +144,19 @@ function pask_json_load_point( $paths ) {
 
 //lab members display
 
+function plask_lab_member_img(){
+	$title = get_the_title();
+	if(get_the_post_thumbnail_url(get_the_ID(),'bio-pic')){
+		$img = get_the_post_thumbnail_url(get_the_ID(),'bio-pic');
+		return 	"<img class='member-fit' src='{$img}' alt='Profile picture for {$title}.'>";	
+
+	} else {
+		$img = get_template_directory_uri()."/imgs/ant-head.jpg";
+		return 	"<img class='member-fit' src='{$img}' alt='Profile picture for {$title}.'>";	
+	}
+
+}
+
 function plask_lab_active_people(){
     $args = array(
             'post_type'  => 'member',
@@ -166,12 +179,12 @@ function plask_lab_active_people(){
         while ( $people_query->have_posts() ) : $people_query->the_post();
           // Do Stuff
             $title = get_the_title();
-            $img = get_the_post_thumbnail_url(get_the_ID(),'bio-pic'); 
+            $img = plask_lab_member_img();
             $url = get_the_permalink();
           	$html .= "<div class='col-md-4'>
 	          			<div class='ratio ratio-1x1 lab-member-page'>
 		          			<a href='{$url}'>
-		          				<img class='member-fit' src='{$img}' alt='Profile picture for {$title}.'>	
+		          				{$img}	
 								{$title}
 							</a>
 						</div>
@@ -207,12 +220,12 @@ function plask_lab_emeritus_people(){
         while ( $people_query->have_posts() ) : $people_query->the_post();
           // Do Stuff
             $title = get_the_title();
-            $img = get_the_post_thumbnail_url(get_the_ID(),'bio-pic'); 
+            $img = plask_lab_member_img(); 
             $url = get_the_permalink();
           	$html .= "<div class='col-md-4'>
 	          			<div class='ratio ratio-1x1 lab-member-page'>
 	          				<a href='{$url}'>
-	          					<img class='member-fit' src='{$img}' alt='Profile picture for {$title}.'>
+	          					{$img}
 								{$title}
 							</a>
 						</div>
