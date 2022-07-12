@@ -16286,6 +16286,11 @@ p {
   background-size: cover;
   background-position: center center;
   padding: 20px;
+  transition: all 0.4s;
+}
+
+.home-person:hover {
+  border-color: #c70804;
 }
 
 .yellow {
