@@ -291,12 +291,12 @@ p {
     display: block;
     height: 100%;
     width: 100%;
-    text-shadow: 1px 1px #000, -1px -1px #000;
     text-decoration: none;
+    transition: all .5s;
 }
 
 .member-link:hover {
-    text-shadow: 1px 1px #fff, -1px -1px #fff;
+    color: #fff;
 }
 
 .home-person {
