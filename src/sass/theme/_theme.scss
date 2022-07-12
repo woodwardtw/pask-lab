@@ -293,6 +293,7 @@ p {
     width: 100%;
     text-decoration: none;
     transition: all .5s;
+    text-shadow: 1px 1px #000, -1px -1px #000;
 }
 
 .member-link:hover {
