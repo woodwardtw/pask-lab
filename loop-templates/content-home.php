@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 </div>
         </div>
         <div class="col-md-6 black-block">
-            <img src="<?php echo get_template_directory_uri();?>/imgs/ant-head.jpg">
+            <img src="<?php echo get_template_directory_uri();?>/imgs/micro-ant.jpg">
         </div>
     </div>
     <!--end about-->
