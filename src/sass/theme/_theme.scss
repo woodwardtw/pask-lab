@@ -55,6 +55,15 @@ p {
     margin-bottom: 1.4rem;
 }
 
+.logo-image {
+    background-color: #fff;
+    background-image: url('../imgs/main-logo.jpg');
+    background-size: contain;
+    background-position: center center;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
 .logo h1{
     // width: 20vw;
     // height: 20vw;

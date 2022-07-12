@@ -36,7 +36,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		    <div class="row header">                
             <div class="col-md-9">
                         <a class="logo" href="<?php echo site_url();?>" >
-						<h1><?php echo get_bloginfo('name')?></h1>
+	                        <div class="logo-image">
+	                        </div>                        	
                         </a>
                 </div>
             <!--end title block-->           
