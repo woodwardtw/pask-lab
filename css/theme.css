@@ -17141,7 +17141,7 @@ p {
 
 .logo-image {
   background-color: #fff;
-  background-image: url("../imgs/main-logo.jpg");
+  background-image: url("../imgs/main-logo-large.jpg");
   background-size: contain;
   background-position: center center;
   height: 400px;
@@ -17630,6 +17630,15 @@ p {
 @media only screen and (max-width: 700px) {
   h2, .h2 {
     font-size: 6vw;
+  }
+
+  .logo-image {
+    background-color: #fff;
+    background-image: url("../imgs/main-logo.jpg");
+    background-size: contain;
+    background-position: center center;
+    height: 400px;
+    background-repeat: no-repeat;
   }
 
   .project-member h3, .project-member .h3, .member-project h3, .member-project .h3 {
