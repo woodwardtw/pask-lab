@@ -16071,8 +16071,8 @@ p {
 }
 
 .logo-image {
-  background-color: #fff;
-  background-image: url("../imgs/main-logo-large.jpg");
+  background-color: black;
+  background-image: url("../imgs/main-logo-dark.png");
   background-size: contain;
   background-position: center center;
   height: 400px;
@@ -16564,8 +16564,8 @@ p {
   }
 
   .logo-image {
-    background-color: #fff;
-    background-image: url("../imgs/main-logo.jpg");
+    background-color: black;
+    background-image: url("../imgs/main-logo-dark-small.png");
     background-size: contain;
     background-position: center center;
     height: 400px;
